@@ -14,30 +14,30 @@ import CTA from '../components/blocks/CTA/BasicDark.astro'
 // Content
 // - SEO
 const SEO = {
-	title: 'Foxi | Pricing made simple',
+	title: 'podcast4.me | Affordable AI Podcast Creation Plans',
 	description:
-		'Discover the perfect SaaS pricing plan for your business. From startups to enterprises, our scalable solutions offer unparalleled features and 24/7 support.'
+		'Find the perfect AI podcast creation plan for your content needs. Create professional podcasts in minutes with no experience required. All plans include our powerful AI technology with a 30-day satisfaction guarantee.'
 }
 // - Page Header
 const header = {
-	title: 'Choose the plan that works for <strong>your</strong> needs',
-	text: 'All plans come with a 30-day money-back guarantee.'
+	title: 'Simple pricing for your <strong>podcasting journey</strong>',
+	text: 'All plans include our AI podcast creation technology with a 30-day satisfaction guarantee.'
 }
 // - Testimonial data
 import testimonialBackground from '../assets/testimonial-bg-02.webp'
 const testimonialData = {
 	blockquote:
-		"Foxi isn't just an app—it's like having a mischievous yet brilliant sidekick for your business. It streamlines tasks and also cracks jokes to keep spirits high",
-	figcaption: 'Max Widgetson',
-	cite: ' CEO, Widgetify Ltd'
+		'podcast4.me transformed how I create content. I went from zero podcasting experience to launching a professional show in one afternoon. The AI technology is revolutionary for content creators like me.',
+	figcaption: 'Sarah Martinez',
+	cite: 'Content Creator & Podcast Host'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={header.title} text={header.text} />
 	<Price />
-	<SocialProof />
-	<Feature />
+	<!-- <SocialProof /> -->
+	<!-- <Feature /> -->
 	<Testimonial
 		bg={testimonialBackground}
 		bgPosition="left"

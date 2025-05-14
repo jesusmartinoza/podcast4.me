@@ -16,13 +16,15 @@ type Props = {
 	blockquote?: string
 	figcaption?: string
 	cite?: string
+	link?: string
 	bg?: any
 	bgPosition?: 'left' | 'right' | 'center'
 }
 const {
-	blockquote = 'Foxi is like a rocket boost for our productivity! Its sleek design and out-of-this-world features make managing projects and team communication a breeze.',
-	figcaption = 'Sheryl Sandberg',
-	cite = 'CEO, Facebook',
+	blockquote = 'Podcast4.me helped me create my first AI podcast in just one afternoon. The quality is incredible, I grew my new brand in just 2 weeks.',
+	figcaption = 'Lizeth Mendoza',
+	cite = 'Founder of @hellomelon.co',
+	link = 'https://hellomelon.co',
 	bg,
 	bgPosition = 'center'
 } = Astro.props
@@ -41,6 +43,7 @@ const {
 				blockquote={blockquote}
 				figcaption={figcaption}
 				cite={cite}
+				link={link}
 				align="center"
 				size="4xl"
 				mobileSize="2xl"

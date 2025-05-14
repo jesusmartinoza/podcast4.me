@@ -7,7 +7,7 @@ import Footer from '../components/ui/Footer.astro'
 import Modal from '../components/blocks/modal/SignUp.astro'
 import Header from '../components/blocks/head/Header.astro'
 // Scripts
-import Scriprs from '../components/scripts/LocalScripts.astro'
+import Scripts from '../components/scripts/LocalScripts.astro'
 import GoogleTagManagerBody from '../components/scripts/googleTagManagerBody.astro'
 // Styles
 import '../styles/global.css'
@@ -29,7 +29,7 @@ const { title, description, ogImage, noindex } = Astro.props
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-animation mode-light">
+<html lang="en" class="scroll-animation mode-auto">
 	<Header title={title} description={description} ogImage={ogImage} noindex={noindex} />
 	<body
 		class:list={[
@@ -44,6 +44,6 @@ const { title, description, ogImage, noindex } = Astro.props
 		</Main>
 		<Footer />
 		<Modal />
-		<Scriprs />
+		<Scripts />
 	</body>
 </html>

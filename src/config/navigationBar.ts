@@ -34,14 +34,13 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'The tailwind astro theme',
-		text: 'Foxi.'
+		alt: 'Podcast4.me',
+		text: 'Podcast4.me'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
-		{ name: 'Pricing', link: '/pricing' },
-		{ name: 'Features', link: '/features' },
-		{
+		{ name: 'Pricing', link: '/pricing' }
+		/*{
 			name: 'Resources',
 			link: '#',
 			submenu: [
@@ -51,7 +50,7 @@ export const navigationBarData: NavData = {
 				{ name: 'Terms', link: '/terms' }
 			]
 		},
-		{ name: 'Contact', link: '/contact' }
+		{ name: 'Contact', link: '/contact' }*/
 	],
-	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Start for Free', link: '/', style: 'primary', size: 'lg' }]
 }

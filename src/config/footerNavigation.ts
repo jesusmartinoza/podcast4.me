@@ -32,16 +32,15 @@ export interface FooterData {
 	footerColumns: FooterColumn[]
 	subFooter: SubFooter
 }
-
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'podcast4.me',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'Transform your podcast episodes into engaging short-form videos for social media in seconds. Our AI-powered platform helps podcasters increase visibility, drive traffic to full episodes, and grow your audience effortlessly.',
 		logo: {
 			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			alt: 'podcast4.me logo',
+			text: 'podcast4.me'
 		}
 	},
 	footerColumns: [
@@ -53,16 +52,8 @@ export const footerNavigationData: FooterData = {
 					subCategoryLink: '/features'
 				},
 				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
-				},
-				{
 					subCategory: 'Pricing',
 					subCategoryLink: '/pricing'
-				},
-				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
 				},
 				{
 					subCategory: 'Terms',
@@ -71,41 +62,20 @@ export const footerNavigationData: FooterData = {
 			]
 		},
 		{
-			category: 'About us',
+			category: 'About Us',
 			subCategories: [
 				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'News',
+					subCategory: 'Blog',
 					subCategoryLink: '/blog'
 				},
-				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
-				}
-			]
-		},
-		{
-			category: 'Get in touch',
-			subCategories: [
 				{
 					subCategory: 'Contact',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Join us',
 					subCategoryLink: '/contact'
 				}
 			]
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© Podcast4.me 2025'
 	}
 }
