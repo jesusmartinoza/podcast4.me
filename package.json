@@ -28,7 +28,7 @@
     "npm": "^11.3.0",
     "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0",
-    "prettier-plugin-tailwindcss": "^0.6.4",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "sharp": "^0.33.4",
     "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.6",

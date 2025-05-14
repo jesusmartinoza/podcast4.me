@@ -57,16 +57,16 @@ const { footerAbout, footerColumns, subFooter } = footerNavigationData
 		@apply text-neutral-500 dark:text-neutral-300;
 	}
 	.footer a {
-		@apply transition-colors duration-300 hover:text-primary-500 focus:text-primary-600;
+		@apply hover:text-primary-500 focus:text-primary-600 transition-colors duration-300;
 	}
 	.footer__main {
-		@apply border-t border-neutral-100 bg-neutral-50 pb-12 pt-16 text-sm dark:border-neutral-900 dark:bg-neutral-950 [&_li]:mb-2 [&_li]:leading-6;
+		@apply border-t border-neutral-100 bg-neutral-50 pt-16 pb-12 text-sm dark:border-neutral-900 dark:bg-neutral-950 [&_li]:mb-2 [&_li]:leading-6;
 	}
 	.footer__main h3 {
-		@apply mb-6 text-base font-medium leading-8 text-neutral-700 dark:text-neutral-50;
+		@apply mb-6 text-base leading-8 font-medium text-neutral-700 dark:text-neutral-50;
 	}
 	.footer__main-brand {
-		@apply mb-6 flex items-center gap-2 whitespace-nowrap font-headings text-xl font-bold leading-6 text-neutral-700 focus:outline-none dark:text-neutral-50;
+		@apply mb-6 flex items-center gap-2 text-xl leading-6 font-bold whitespace-nowrap text-neutral-700 focus:outline-none dark:text-neutral-50;
 	}
 	.footer__container {
 		@apply container mx-auto px-6;
