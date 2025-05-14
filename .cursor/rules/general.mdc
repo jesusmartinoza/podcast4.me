@@ -1,0 +1,69 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Podcast4.me Project Overview
+
+Podcast4.me is an AI-powered platform that revolutionizes podcast creation by automating the entire production process. Our platform enables creators to generate professional quality podcasts with minimal effort, making podcasting accessible to everyone.
+
+When writing texts don't use double "-", avoid using "-" when possible.
+
+## Core Features
+- **AI Content Generation**: Create engaging podcast scripts using advanced AI models
+- **Voice Synthesis**: Natural-sounding speech with multiple voice options
+- **Audio Enhancement**: Automatic quality improvement and noise removal
+- **Smart Editing**: AI-assisted content refinement
+- **Content Planning**: AI-driven topic suggestions and structure
+- **Multi-Format Export**: Generate podcasts for various platforms
+
+## Target Users
+- Content creators and podcasters
+- Businesses creating branded content
+- Educators and thought leaders
+- Anyone interested in podcasting without technical expertise
+
+## Value Proposition
+- Reduces time and technical skills required
+- Provides professional-quality output
+- Offers intuitive, user-friendly interface
+- Automates complex audio production
+- Enables consistent content creation
+
+## Platform Capabilities
+- AI-powered script generation
+- Multi-language voice synthesis
+- Automatic audio optimization
+- Easy platform distribution
+- Performance analytics
+- Team collaboration tools
+
+## Technology
+- Advanced AI models for content and voice
+- Cloud-based audio processing
+- Secure asset management
+- Platform API integrations
+- Real-time collaboration
+
+## Future Vision
+Podcast4.me aims to be the leading platform for AI-powered podcast creation, continuously evolving with:
+- Enhanced AI capabilities for more natural content generation
+- Expanded voice options and language support
+- Advanced audio processing features
+- Improved collaboration tools
+- Integration with emerging podcast platforms
+
+## Tech Stack
+- **Framework**: Astro.js for static site generation and optimal performance
+- **Styling**: TailwindCSS for utility-first styling
+- **TypeScript**: For type-safe development
+
+## Project Structure
+The project follows a well-organized structure:
+- `/src/components/`: Reusable UI components and section blocks
+- `/src/pages/`: Main application pages and routes
+- `/src/layouts/`: Page layout templates
+- `/src/content/`: Content collections (blog posts, etc.)
+- `/public/`: Static assets and media files
+
+## Key Features

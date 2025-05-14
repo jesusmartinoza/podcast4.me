@@ -1,0 +1,111 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+# Frontmatter: Metadatos para la regla de generación de texto SEO
+description: Guía a la IA para generar textos optimizados para SEO para la plataforma podcast4.me. El objetivo es mejorar la visibilidad y el descubrimiento de los podcasts y los videoclips generados.
+# globs: "**/*.{md,txt}" # Opcional: Aplicar al trabajar con transcripciones o borradores de contenido.
+alwaysApply: true # Aplicar estas reglas de forma general al generar textos SEO.
+ruleType: always
+---
+
+# Generación de Textos Optimizados para SEO para podcast4.me
+# Versión: 1.0
+# Fecha: 2025-05-14
+
+## === 1. Descripción General del Proyecto: podcast4.me ===
+# La IA debe entender que **podcast4.me** es una plataforma que permite a los usuarios transformar sus podcasts en videoclips cortos y atractivos (Reels, TikToks) de manera rápida y con alta calidad.
+# El contenido SEO generado tiene como objetivo:
+#   - Aumentar la visibilidad de estos videoclips.
+#   - Dirigir tráfico hacia los episodios completos del podcast.
+#   - Posicionar a podcast4.me como una herramienta útil para podcasters.
+#   - Atraer a usuarios que buscan cómo promocionar y reutilizar su contenido de podcast.
+
+## === 2. Objetivos Principales del SEO para podcast4.me ===
+- **Descubrimiento:** Asegurar que los podcasts, los clips y el contenido relacionado sean fácilmente encontrables a través de motores de búsqueda (Google, YouTube, TikTok Search, etc.).
+- **Tráfico Cualificado:** Atraer a usuarios interesados en los temas de los podcasts y en herramientas de creación de contenido.
+- **Engagement:** Fomentar que los usuarios interactúen con el contenido (clics, visualizaciones, escuchas, comentarios).
+- **Conversión:** Animar a los usuarios a escuchar el episodio completo, seguir el podcast, o utilizar la plataforma podcast4.me.
+
+## === 3. Estrategia de Palabras Clave ===
+### 3.1. Identificación de Palabras Clave:
+- La IA debe ser capaz de extraer temas y entidades clave del contenido del podcast (transcripciones si están disponibles) o de la descripción del episodio.
+- Sugerir y utilizar una mezcla de:
+    - **Palabras clave principales (Short-tail):** Ej: "mejores podcasts [tema]", "crear reels de podcast".
+    - **Palabras clave de cola larga (Long-tail):** Ej: "cómo convertir un podcast de [tema] en un TikTok viral", "herramienta para hacer clips de audio para Instagram".
+    - **Palabras clave LSI (Latent Semantic Indexing):** Términos relacionados semánticamente con las palabras clave principales.
+- Considerar la intención de búsqueda del usuario (informativa, transaccional, navegacional).
+
+### 3.2. Uso de Palabras Clave:
+- Integrar las palabras clave de forma natural en títulos, encabezados, meta descripciones y cuerpo del texto.
+- **Evitar el "keyword stuffing"** (repetición excesiva de palabras clave). La densidad debe ser natural.
+- Utilizar la palabra clave principal en el primer párrafo o en los primeros 100 caracteres si es posible.
+- Variar el uso de palabras clave (sinónimos, variaciones).
+
+## === 4. Creación de Títulos Optimizados para SEO (Ej: para videos, posts de blog) ===
+- **Longitud:** Idealmente entre 50-60 caracteres para evitar truncamiento en los SERPs.
+- **Claridad y Relevancia:** El título debe describir con precisión el contenido.
+- **Palabra Clave Principal:** Incluirla, preferiblemente al inicio del título.
+- **Atractivo (Click-Through Rate - CTR):** Usar números, preguntas, o palabras que generen curiosidad (ej: "Guía Definitiva", "Secretos Revelados", "X Consejos").
+- **Ejemplos para podcast4.me:**
+    - Basado en clip: "[Tema del Clip]: Momentos Clave del Podcast [Nombre del Podcast]"
+    - Tutorial: "Cómo Crear Reels Virales de tu Podcast en Segundos con podcast4.me"
+    - Post de blog: "X Ideas de Contenido de Podcast para Reutilizar en TikTok"
+
+## === 5. Redacción de Meta Descripciones ===
+- **Longitud:** Entre 150-160 caracteres.
+- **Resumen Persuasivo:** Debe ser un resumen atractivo del contenido que incite al clic.
+- **Palabras Clave:** Incluir la palabra clave principal y/o secundarias de forma natural.
+- **Llamada a la Acción (CTA) Sutil:** Ej: "Descubre más", "Escucha ahora", "Aprende cómo".
+- **Unicidad:** Cada página o video debe tener una meta descripción única.
+- **Ejemplo para un clip en podcast4.me:** "Revive el momento más impactante del episodio '[Título del Episodio]' de [Nombre del Podcast] sobre [tema]. ¡Descubre [beneficio clave] en este clip y escucha el episodio completo!"
+
+## === 6. Estructura del Contenido (para posts de blog, descripciones largas) ===
+- **Encabezados (H1, H2, H3, etc.):**
+    - Usar un solo H1 por página (generalmente el título del post).
+    - Organizar el contenido con H2 y H3 para mejorar la legibilidad y el SEO.
+    - Incluir palabras clave en los encabezados de forma natural.
+- **Párrafos Cortos:** Facilitar la lectura en pantalla.
+- **Listas con Viñetas o Numeradas:** Mejorar la escaneabilidad.
+- **Contenido Multimedia:** Sugerir la inserción de los videoclips generados por podcast4.me dentro de los posts de blog.
+- **Enlaces Internos:**
+    - Cuando sea relevante, sugerir enlazar a otros episodios del podcast, clips relacionados, o páginas importantes dentro de la web del usuario o de podcast4.me (si aplica).
+- **Enlaces Externos (Opcional):** Enlazar a fuentes autorizadas si se aporta valor adicional.
+
+## === 7. Reutilización de Contenido de Podcast para SEO ===
+- La IA debe ser experta en transformar transcripciones o resúmenes de podcasts en:
+    - **Posts de blog optimizados:** Expandiendo los puntos clave, añadiendo contexto y optimizando para SEO.
+    - **Descripciones detalladas para plataformas de video (YouTube, Vimeo):** Utilizando palabras clave, timestamps y resúmenes.
+    - **Artículos de preguntas frecuentes (FAQ):** Basados en preguntas respondidas en el podcast.
+    - **Citas destacadas para redes sociales:** Con un enfoque en la compartibilidad y el descubrimiento.
+
+## === 8. Llamadas a la Acción (CTA) Orientadas a SEO ===
+- Integrar CTAs que no solo conviertan sino que también puedan incluir palabras clave o mejorar el contexto para los motores de búsqueda.
+- Ejemplos:
+    - "Escucha el episodio completo de '[Título del Episodio] sobre [Palabra Clave]' aquí."
+    - "Descubre más herramientas para podcasters como '[Palabra Clave Relacionada]' en podcast4.me."
+
+## === 9. Tono y Voz para Textos SEO ===
+- **Claro y Conciso:** Facilitar la comprensión tanto para usuarios como para motores de búsqueda.
+- **Autoridad (cuando aplique):** Demostrar conocimiento sobre el tema del podcast.
+- **Alineado con la Marca del Podcast:** Mantener la coherencia con el tono del podcast original.
+- **Orientado al Usuario:** Escribir para humanos primero, luego optimizar para SEO.
+
+## === 10. Qué Evitar en la Generación de Textos SEO ===
+- **Keyword Stuffing:** Repetición excesiva y no natural de palabras clave.
+- **Contenido Duplicado:** Generar siempre texto original. Si se basa en una transcripción, debe ser reescrito y reestructurado significativamente.
+- **Títulos y Meta Descripciones Genéricos o Truncados.**
+- **Enlaces Rotos o de Baja Calidad.**
+- **Doble guión**
+- **Ignorar la Intención de Búsqueda del Usuario.**
+- **Contenido Delgado (Thin Content):** Textos muy cortos sin valor sustancial.
+
+## === 11. Ejemplos de Tareas para la IA con Enfoque SEO para podcast4.me ===
+- "Genera un título SEO y una meta descripción para un videoclip de 30 segundos extraído del episodio '[Título del Episodio]' sobre '[Tema Principal]'."
+- "Convierte este segmento de transcripción de podcast sobre '[Subtema]' en un borrador de post de blog de 500 palabras, optimizado para la palabra clave '[Palabra Clave Principal]'."
+- "Sugiere 5 preguntas frecuentes con sus respuestas basadas en este episodio de podcast, optimizadas para búsqueda por voz."
+- "Escribe una descripción para YouTube para el clip '[Nombre del Clip]', incluyendo timestamps para los puntos clave y usando las palabras clave '[Palabra Clave 1]', '[Palabra Clave 2]'."
+
+# --- Fin de las Reglas de SEO para podcast4.me ---
