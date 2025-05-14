@@ -1,0 +1,67 @@
+---
+// Components
+import Layout from '../layouts/Layout.astro'
+
+// SEO
+const SEO = {
+	title: 'podcast4.me | Dashboard',
+	description:
+		'Crea y gestiona tus podcasts con IA. Transforma tus ideas en contenido de audio profesional en minutos.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<main class="container mx-auto px-4 py-8">
+		<h1 class="mb-6 text-3xl font-bold">Dashboard</h1>
+
+		<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+			<!-- Crear nuevo podcast -->
+			<div
+				class="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800"
+			>
+				<h2 class="mb-4 text-xl font-semibold">Crear nuevo podcast</h2>
+				<p class="mb-4 text-gray-600 dark:text-gray-300">
+					Transforma tus ideas en podcasts profesionales con nuestra IA
+				</p>
+				<a
+					href="/app/create"
+					class="inline-block rounded-md bg-primary-500 px-4 py-2 font-medium text-white transition-colors hover:bg-primary-600"
+				>
+					Comenzar ahora
+				</a>
+			</div>
+
+			<!-- Mis podcasts -->
+			<div
+				class="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800"
+			>
+				<h2 class="mb-4 text-xl font-semibold">Mis podcasts</h2>
+				<p class="mb-4 text-gray-600 dark:text-gray-300">
+					Accede a todos tus podcasts creados anteriormente
+				</p>
+				<a
+					href="/app/my-podcasts"
+					class="inline-block rounded-md bg-gray-100 px-4 py-2 font-medium text-gray-800 transition-colors hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+				>
+					Ver podcasts
+				</a>
+			</div>
+
+			<!-- Suscripción -->
+			<div
+				class="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800"
+			>
+				<h2 class="mb-4 text-xl font-semibold">Mi suscripción</h2>
+				<p class="mb-4 text-gray-600 dark:text-gray-300">
+					Gestiona tu plan y revisa tu uso mensual
+				</p>
+				<a
+					href="/app/subscription"
+					class="inline-block rounded-md bg-gray-100 px-4 py-2 font-medium text-gray-800 transition-colors hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+				>
+					Ver detalles
+				</a>
+			</div>
+		</div>
+	</main>
+</Layout>

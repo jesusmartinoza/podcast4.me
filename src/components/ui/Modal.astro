@@ -39,10 +39,10 @@ const { id, title, classes } = Astro.props
 
 <style>
 	.modal {
-		@apply fixed left-0 top-0 z-30 flex h-0 w-full items-center justify-center overflow-hidden bg-white/50 lg:backdrop-blur-sm dark:bg-neutral-900/50 [&.open]:h-full;
+		@apply fixed top-0 left-0 z-30 flex h-0 w-full items-center justify-center overflow-hidden bg-white/50 lg:backdrop-blur-sm dark:bg-neutral-900/50 [&.open]:h-full;
 	}
 	.modal__popup {
-		@apply m-6 flex w-80 max-w-full translate-y-6 flex-col overflow-hidden rounded border border-neutral-100 bg-white text-neutral-500 opacity-0 shadow-xl shadow-neutral-700/5 transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-neutral-950/50 [.open_&]:translate-y-0 [.open_&]:opacity-100;
+		@apply m-6 flex w-80 max-w-full translate-y-6 flex-col overflow-hidden rounded-sm border border-neutral-100 bg-white text-neutral-500 opacity-0 shadow-xl shadow-neutral-700/5 transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-neutral-950/50 [.open_&]:translate-y-0 [.open_&]:opacity-100;
 	}
 	.modal__header {
 		@apply flex items-center justify-between gap-6 border-b border-neutral-100 px-6 py-2 text-lg font-medium dark:border-neutral-800;

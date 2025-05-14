@@ -39,8 +39,8 @@ const { type = 'top-icon', title, icon = 'rocket', iconStyle, align, classes } =
 		name=`${icon}`
 		class:list={[
 			'shrink-0',
-			{ [`size-6 text-primary-500`]: iconStyle != 'square' },
-			{ [`size-10 rounded bg-primary-500 p-2 text-white`]: iconStyle === 'square' }
+			{ [`text-primary-500 size-6`]: iconStyle != 'square' },
+			{ [`bg-primary-500 size-10 rounded-sm p-2 text-white`]: iconStyle === 'square' }
 		]}
 	/>
 	<div class="feature__body">
@@ -64,7 +64,7 @@ const { type = 'top-icon', title, icon = 'rocket', iconStyle, align, classes } =
 			@apply flex flex-col gap-4;
 		}
 		.feature__title {
-			@apply mb-4 text-lg font-normal leading-6;
+			@apply mb-4 text-lg leading-6 font-normal;
 		}
 		.feature--center {
 			@apply items-center text-center;

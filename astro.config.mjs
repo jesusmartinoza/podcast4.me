@@ -1,15 +1,16 @@
 import { defineConfig } from "astro/config";
 import partytown from "@astrojs/partytown";
-import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 
 import sitemap from "@astrojs/sitemap";
 
+import tailwindcss from "@tailwindcss/vite";
+
 // https://astro.build/config
 export default defineConfig({
-  site: "https://foxi.netlify.app/",
+  site: "https://podcast4.me/",
+
   integrations: [
-    tailwind(),
     icon(),
     sitemap(),
     partytown({
@@ -18,4 +19,8 @@ export default defineConfig({
       },
     }),
   ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
