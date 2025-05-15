@@ -20,7 +20,7 @@ import {
       icon: Film,
     },
     {
-      title: "Text to Speech", 
+      title: "Text to Audio", 
       url: "/app/text-to-speech",
       icon: Mic,
     },    

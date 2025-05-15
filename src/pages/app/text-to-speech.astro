@@ -2,6 +2,7 @@
 // Imports
 import Layout from '@/layouts/Layout.astro'
 import App from '@/components/app/main-app'
+import TextToSpeech from '@/components/app/text-to-speech'
 ---
 
 <Layout
@@ -10,7 +11,7 @@ import App from '@/components/app/main-app'
 	hideNavbar
 	hideFooter
 >
-	<App client:idle>
-		<h1>Text to Speech</h1>
+	<App>
+		<TextToSpeech client:idle />
 	</App>
 </Layout>
