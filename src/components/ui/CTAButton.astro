@@ -1,0 +1,41 @@
+---
+interface Props {
+	text: string
+	href?: string
+	color?: 'primary' | 'secondary' | 'success' | 'danger'
+	size?: 'sm' | 'md' | 'lg'
+	fullWidth?: boolean
+}
+
+const { text, href, color = 'primary', size = 'md', fullWidth = false } = Astro.props
+
+// Color variants
+const colorClasses = {
+	primary: 'bg-primary-400 hover:bg-primary-600',
+	secondary: 'bg-neutral-300 hover:bg-neutral-400',
+	success: 'bg-green-400 hover:bg-green-500',
+	danger: 'bg-red-400 hover:bg-red-500'
+}
+
+// Size variants
+const sizeClasses = {
+	sm: 'px-4 py-2 text-sm',
+	md: 'px-6 py-3',
+	lg: 'px-8 py-4 text-lg'
+}
+
+const widthClass = fullWidth ? 'w-full' : 'inline-block'
+---
+
+<a
+	href={href}
+	class:list={[
+		widthClass,
+		'rounded-none border-4 border-black font-black uppercase tracking-wider text-black transition-all hover:-translate-y-1 hover:text-black',
+		'shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]',
+		colorClasses[color],
+		sizeClasses[size]
+	]}
+>
+	<slot>{text}</slot>
+</a>
