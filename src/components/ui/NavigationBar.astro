@@ -14,7 +14,7 @@
 // Components
 // - UI
 import { Icon } from 'astro-icon/components'
-import { SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/astro/components'
+import { SignedIn, SignedOut, SignInButton } from '@clerk/astro/components'
 
 // Data
 import { navigationBarData } from '../../config/navigationBar'
@@ -102,7 +102,7 @@ const savedNavActions = navActions.map((action) => ({
 			<!-- Navigation action buttons -->
 			<div class="header__actions">
 				<SignedOut>
-					<SignInButton mode="modal">
+					<SignInButton mode="modal" fallbackRedirectUrl="/app">
 						<div
 							class="flex-auto rounded-md border-2 border-black bg-primary-300 px-4 py-2 font-bold text-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:bg-primary-400"
 						>
@@ -111,7 +111,12 @@ const savedNavActions = navActions.map((action) => ({
 					</SignInButton>
 				</SignedOut>
 				<SignedIn>
-					<UserButton />
+					<a
+						href="/app"
+						class="flex-auto rounded-md border-2 border-black bg-primary-300 px-4 py-2 font-bold text-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:bg-primary-400"
+					>
+						<span>Open App</span>
+					</a>
 				</SignedIn>
 			</div>
 		</nav>
