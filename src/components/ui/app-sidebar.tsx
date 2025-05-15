@@ -3,39 +3,43 @@ import {
     SidebarContent,
     SidebarGroup,
     SidebarGroupLabel,
-    SidebarHeader,
     SidebarMenu,
     SidebarMenuItem,
     SidebarMenuButton,
     SidebarGroupContent,
   } from "@/components/ui/sidebar"
-  import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+  import { Home, Headphones, Mic, BookMarked, Search, User, Settings } from "lucide-react"
 
 
   const items = [
     {
-      title: "Home",
-      url: "#",
+      title: "Dashboard",
+      url: "/app",
       icon: Home,
     },
     {
-      title: "Inbox",
-      url: "#",
-      icon: Inbox,
+      title: "My Podcasts",
+      url: "/app/my-podcasts",
+      icon: Headphones,
     },
     {
-      title: "Calendar",
-      url: "#",
-      icon: Calendar,
+      title: "Saved Episodes",
+      url: "/app/saved",
+      icon: BookMarked,
     },
     {
-      title: "Search",
-      url: "#",
-      icon: Search,
+      title: "Create",
+      url: "/app/create",
+      icon: Mic,
+    },
+    {
+      title: "Profile",
+      url: "/app/profile",
+      icon: User,
     },
     {
       title: "Settings",
-      url: "#",
+      url: "/app/settings",
       icon: Settings,
     },
   ]
