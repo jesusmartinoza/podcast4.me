@@ -10,8 +10,8 @@ import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astr
 import CTA from '../components/blocks/CTA/BasicDark.astro'
 
 // Content
-// - Testimonial background
-import testimonialBackground from '../assets/testimonial-bg-01.webp'
+// - Testimonial avatar
+import testimonialAvatar from '../assets/nutriologa.webp'
 // - SEO
 const SEO = {
 	title: 'podcast4.me | Transform Your Podcasts into Viral Video Clips',
@@ -23,7 +23,7 @@ const SEO = {
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero />
 	<Features />
-	<Testimonial bg={testimonialBackground} bgPosition="right" />
+	<Testimonial avatar={testimonialAvatar} />
 	<!-- <HighlightBlocks /> -->
 	<CTA />
 </Layout>

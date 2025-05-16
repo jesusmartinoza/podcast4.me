@@ -61,7 +61,7 @@ const {
 >
 	<div class="testimonial__container">
 		<figure class="testimonial__figure">
-			<blockquote class="testimonial__blockquote">
+			<blockquote class="testimonial__blockquote text-3xl">
 				<p>
 					{blockquote}
 				</p>
@@ -83,9 +83,14 @@ const {
 						<span class="testimonial__figcaption--credit">{figcaption}</span>
 						{
 							cite && (
-								<cite class="testimonial__figcaption--cite">
+								<cite class="testimonial__figcaption--cit">
 									{link ? (
-										<a href={link} target="_blank">
+										<a
+											href={`${link}?utm_source=podcast4me&utm_medium=testimonial`}
+											target="_blank"
+											class="!text-white"
+											rel="noopener noreferrer"
+										>
 											{cite}
 										</a>
 									) : (
@@ -125,13 +130,13 @@ const {
 		@apply relative z-10;
 	}
 	.testimonial__blockquote {
-		@apply p-6 [&>p]:text-neutral-500 dark:[&>p]:text-neutral-300;
+		@apply p-6 [&>p]:text-black;
 	}
 	.testimonial__figcaption {
-		@apply flex flex-col items-center gap-4 p-6 pt-2 text-sm leading-normal text-neutral-700 dark:text-neutral-50;
+		@apply flex flex-col items-start gap-4 p-6 pt-2 text-lg leading-normal text-black dark:text-neutral-50;
 	}
 	.testimonial__figcaption-container {
-		@apply flex items-center gap-4 pt-4 text-sm;
+		@apply flex items-center gap-4 pt-4 text-lg;
 	}
 	.testimonial__figcaption-cite-container {
 		@apply flex flex-col gap-1;

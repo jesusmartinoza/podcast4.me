@@ -10,7 +10,8 @@ import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
 // - UI
 import Testimonial from '../../ui/Testimonial.astro'
-
+import Card from '../../ui/cards/partials/Card.astro'
+import { Image } from 'astro:assets'
 // Props
 type Props = {
 	blockquote?: string
@@ -19,6 +20,7 @@ type Props = {
 	link?: string
 	bg?: any
 	bgPosition?: 'left' | 'right' | 'center'
+	avatar?: any
 }
 const {
 	blockquote = 'Podcast4.me helped me expand my brand to TikTok. Now I can publish podcasts without having a studio.',
@@ -26,7 +28,8 @@ const {
 	cite = 'Founder of @hellomelon.co',
 	link = 'https://hellomelon.co',
 	bg,
-	bgPosition = 'center'
+	bgPosition = 'center',
+	avatar
 } = Astro.props
 ---
 
@@ -35,21 +38,34 @@ const {
 	mode="dark"
 	bg={bg}
 	bgPosition={bgPosition}
-	classes="dark:border-t border-y border-neutral-800"
+	classes="dark:border-t border-y border-neutral-800 py-16 mx-auto bg-gradient-to-br from-primary-400 to-primary-500 border-none p-8 relative overflow-visible"
 >
 	<Row>
 		<Col span="12">
-			<Testimonial
-				blockquote={blockquote}
-				figcaption={figcaption}
-				cite={cite}
-				link={link}
-				align="center"
-				size="4xl"
-				mobileSize="2xl"
-				classes="!leading-tight font-bold xl:text-5xl max-w-4xl mx-auto"
-				quoteSize={112}
-			/>
+			<div class="flex flex-col items-center gap-8 md:flex-row">
+				<div class="md:w-2/3">
+					<Testimonial
+						blockquote={blockquote}
+						figcaption={figcaption}
+						cite={cite}
+						link={link}
+						align="left"
+						size="4xl"
+						mobileSize="lg"
+						classes="!leading-tight font-medium text-white"
+						quoteSize={90}
+					/>
+				</div>
+				<div class="flex justify-center md:w-2/5">
+					{
+						avatar && (
+							<div class="relative">
+								<Image src={avatar} alt={figcaption} class="object-contain" />
+							</div>
+						)
+					}
+				</div>
+			</div>
 		</Col>
 	</Row>
 </Section>
