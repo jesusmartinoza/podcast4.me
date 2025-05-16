@@ -8,8 +8,9 @@ Podcast4.me es una plataforma innovadora impulsada por inteligencia artificial q
 
 ## 📸 Capturas de pantalla
 
-![Dashboard de Podcast4.me](https://via.placeholder.com/800x450?text=Dashboard+de+Podcast4.me)
-![Creación de podcast con IA](https://via.placeholder.com/800x450?text=Creación+de+podcast+con+IA)
+![podcast4me-hero](https://i.ibb.co/Y4Ky1Yxf/podcast4me-hero.png)
+![podcast4me-signin](https://i.ibb.co/wZmqhCQY/podcast4me-signin.png)
+![podcast4me-text-to-audio](https://i.ibb.co/xqH38mm0/podcast4me-text-to-audio.png)
 
 ## 🔐 Integración con Clerk
 
