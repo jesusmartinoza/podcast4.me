@@ -46,7 +46,7 @@ import {
           <SidebarGroup>
             <a href="/">
                 <SidebarGroupLabel className="px-6 mb-0 flex items-center gap-2">
-                        <img src="/logo.svg" alt="Podcast4.me" className="w-10 h-10 p-1 rotate-1" />
+                        <img src="/logo.png" alt="Podcast4.me" className="w-10 h-10 p-1 rotate-1" />
                         <span className="font-black text-xl text-black dark:text-white tracking-tight transform rotate-1">Podcast4.me</span>
                 </SidebarGroupLabel>
             </a>
@@ -101,7 +101,7 @@ import {
 
         <SidebarFooter className="p-6 border-black dark:border-neutral-800">
           <SignOutButton>
-            <button className="flex items-center justify-center gap-2 px-4 py-3 font-black text-black bg-red-300 rounded-none w-full border-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:bg-red-400 hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] dark:text-black">
+            <button className="flex items-center justify-center gap-2 px-2 py-1 font-black text-black bg-red-300 rounded-none w-32 border-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:bg-red-400 hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] dark:text-black">
               <span className="uppercase tracking-wider">Sign Out</span>
             </button>
           </SignOutButton>

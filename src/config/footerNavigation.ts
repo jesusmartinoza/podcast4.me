@@ -38,7 +38,7 @@ export const footerNavigationData: FooterData = {
 		aboutText:
 			'Transform your podcast episodes into engaging short-form videos for social media in seconds. Our AI-powered platform helps podcasters increase visibility, drive traffic to full episodes, and grow your audience effortlessly.',
 		logo: {
-			src: '/logo.svg',
+			src: '/logo.png',
 			alt: 'podcast4.me logo',
 			text: 'podcast4.me'
 		}
