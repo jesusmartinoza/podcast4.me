@@ -22,7 +22,7 @@ const TextToSpeech = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [character, setCharacter] = useState('Lovely_Girl');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsProcessing(true);
     

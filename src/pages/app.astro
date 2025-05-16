@@ -1,7 +1,7 @@
 ---
 // Imports
-import Layout from '../layouts/Layout.astro'
-import App from '@/components/app/main-app'
+import Layout from '@/layouts/Layout.astro'
+import MainAppComponent from '@/components/app/main-app'
 ---
 
 <Layout
@@ -10,7 +10,10 @@ import App from '@/components/app/main-app'
 	hideNavbar
 	hideFooter
 >
-	<App client:idle>
-		<h1>asdad</h1>
-	</App>
+	<MainAppComponent>
+		<div class="p-6">
+			<h1 class="mb-4 text-2xl font-bold">Welcome to Podcast4.me</h1>
+			<p class="text-lg">Select a tool from the sidebar to get started.</p>
+		</div>
+	</MainAppComponent>
 </Layout>
