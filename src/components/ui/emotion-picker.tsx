@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Label } from "@/components/ui/label"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { FaSmile, FaSadTear, FaAngry, FaSurprise, FaMeh, FaRobot, FaSkull, FaGrimace } from 'react-icons/fa';
 
 interface EmotionOption {
@@ -38,25 +40,25 @@ const EmotionPicker: React.FC<EmotionPickerProps> = ({
 
   return (
     <div className={`emotion-picker ${className}`}>
-      <label className="block mb-2 font-medium">Voice Emotion</label>
-      <div className="flex flex-wrap gap-3">
-        {emotions.map((emotion) => (
-          <button
-            key={emotion.id}
-            type="button"
-            onClick={() => handleSelect(emotion.id)}
-            className={`flex flex-col items-center p-3 border-2 text-black w-20 h-18 border-black transition-all ${
-              selected === emotion.id 
-                ? 'bg-primary-400 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]' 
-                : 'bg-neutral-100 hover:bg-neutral-200 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]'
-            }`}
-            aria-label={emotion.label}
-            aria-pressed={selected === emotion.id}
-          >
-            <span className="text-2xl mb-1">{emotion.icon}</span>
-            <span className="text-sm">{emotion.label}</span>
-          </button>
-        ))}
+      <div className="mb-4">
+        <Label className="block mb-2 font-medium">Voice Emotion</Label>
+        <div className="flex items-center gap-4">
+          <Select value={selected} onValueChange={handleSelect}>
+            <SelectTrigger className="w-full">
+              <SelectValue placeholder="Select emotion" />
+            </SelectTrigger>
+            <SelectContent>
+              {emotions.map((emotion) => (
+                <SelectItem key={emotion.id} value={emotion.id}>
+                  <div className="flex items-center gap-2">
+                    <span className="text-lg">{emotion.icon}</span>
+                    <span>{emotion.label}</span>
+                  </div>
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
       </div>
     </div>
   );

@@ -139,12 +139,30 @@ export default {
   				'100%': {
   					boxShadow: '0 20px 25px -5px rgba(2, 6, 23, .25), 0 8px 10px -6px rgba(2, 6, 23, .25);'
   				}
+  			},
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
   			}
   		},
   		animation: {
   			dropdown: 'dropdown 300ms ease-in-out forwards',
   			fadeInShadowLight: 'fadeInShadowLight 500ms ease-in-out forwards',
-  			fadeInShadowDark: 'fadeInShadowDark 500ms ease-in-out forwards'
+  			fadeInShadowDark: 'fadeInShadowDark 500ms ease-in-out forwards',
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

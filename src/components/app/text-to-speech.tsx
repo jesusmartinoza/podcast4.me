@@ -1,7 +1,15 @@
 import { useState } from 'react';
 import EmotionPicker from '@/components/ui/emotion-picker';
 import { Slider } from '@/components/ui/slider';
+import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import CharacterPicker from '@/components/ui/character-picker';
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+  } from "@/components/ui/accordion"
 import { Textarea } from '@/components/ui/textarea';
 
 const TextToSpeech = () => {
@@ -12,7 +20,7 @@ const TextToSpeech = () => {
   const [volume, setVolume] = useState(10);
   const [language, setLanguage] = useState('Automatic');
   const [isProcessing, setIsProcessing] = useState(false);
-  
+  const [character, setCharacter] = useState('Lovely_Girl');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -40,8 +48,8 @@ const TextToSpeech = () => {
       <h2 className="text-2xl font-bold mb-6">Text to Audio</h2>
       
       <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label htmlFor="text" className="block mb-2 font-medium">Your Text</label>
+        <div className="mb-6">
+          <Label htmlFor="text" className="block mb-2 font-medium">Your Text</Label>
           <Textarea
             id="text"
             value={text}
@@ -50,12 +58,12 @@ const TextToSpeech = () => {
             required
           />
         </div>
-        <EmotionPicker onSelect={setEmotion} selectedEmotion={emotion} />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
-
-          <div>
-            <label htmlFor="language" className="block mb-2 font-medium">Language</label>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-4">
+          <EmotionPicker className="col-span-12 md:col-span-4" onSelect={setEmotion} selectedEmotion={emotion} />
+          <CharacterPicker className="col-span-12 md:col-span-4" onSelect={setCharacter} selectedCharacter={character} />
+          <div className="col-span-12 md:col-span-4">
+            <Label htmlFor="language" className="block mb-2 font-medium">Language</Label>
             <Select value={language} onValueChange={setLanguage}>
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Select language" />
@@ -89,51 +97,61 @@ const TextToSpeech = () => {
               </SelectContent>
             </Select>
           </div>
-          
-          <div>
-            <label htmlFor="volume" className="block mb-2 font-medium">
-              Volume: {volume}
-            </label>
-            <Slider
-              id="volume"
-              min={0}
-              max={100}
-              step={1}
-              value={[volume]}
-              onValueChange={(values) => setVolume(values[0])}
-            />
-          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          <div>
-            <label htmlFor="pitch" className="block mb-2 font-medium">
-              Pitch: {pitch}
-            </label>
-            <Slider
-              id="pitch"
-              min={-10}
-              max={10}
-              step={1}
-              value={[pitch]}
-              onValueChange={(values) => setPitch(values[0])}
-              className="w-full"
-            />
+
+        <div className="w-full col-span-1 md:col-span-2">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="advanced" className="border-b-0">
+                <AccordionTrigger className="font-medium">Advanced</AccordionTrigger>
+                <AccordionContent className="mb-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                      <label htmlFor="volume" className="block mb-2 font-medium">
+                        Volume: {volume}
+                      </label>
+                      <Slider
+                        id="volume"
+                        min={0}
+                        max={100}
+                        step={1}
+                        value={[volume]}
+                        onValueChange={(values) => setVolume(values[0])}
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="speed" className="block mb-2 font-medium">
+                        Speed: {speed}x
+                      </label>
+                      <Slider
+                        id="speed"
+                        min={0.5}
+                        max={2.0}
+                        step={0.1}
+                        value={[speed]}
+                        onValueChange={(values) => setSpeed(values[0])}
+                      />
+                    </div>
+                    
+                    <div>
+                      <label htmlFor="pitch" className="block mb-2 font-medium">
+                        Pitch: {pitch}
+                      </label>
+                      <Slider
+                        id="pitch"
+                        min={-10}
+                        max={10}
+                        step={1}
+                        value={[pitch]}
+                        onValueChange={(values) => setPitch(values[0])}
+                        className="w-full"
+                      />
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
-          
-          <div>
-            <label htmlFor="speed" className="block mb-2 font-medium">
-              Speed: {speed}x
-            </label>
-            <Slider
-              id="speed"
-              min={0.5}
-              max={2.0}
-              step={0.1}
-              value={[speed]}
-              onValueChange={(values) => setSpeed(values[0])}
-            />
-          </div>
-        </div>
         <button
           type="submit"
           disabled={isProcessing}
